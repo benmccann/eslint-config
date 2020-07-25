@@ -5,8 +5,8 @@ const { off, all, always, error, never, warn } = require('./constants');
 module.exports = {
 	rules: {
 		camelcase: off,
-		indent: [ warn, 'tab' ],
-		'comma-dangle': [ warn, never ],
+		indent: [ error, 'tab' ],
+		'comma-dangle': [ error, never ],
 		'no-unused-vars': off,
 		semi: [ 2, always ],
 		'keyword-spacing': [ 2, { before: true, after: true } ],
@@ -27,8 +27,8 @@ module.exports = {
 		'no-inner-declarations': 0,
 		'one-var': off,
 		'require-atomic-updates': off,
-		'no-import-assign': warn,
-		'@typescript-eslint/indent': [ warn, 'tab' ],
+		'no-import-assign': error,
+		'@typescript-eslint/indent': [ error, 'tab' ],
 		'@typescript-eslint/camelcase': off,
 		'@typescript-eslint/no-use-before-define': off,
 		'@typescript-eslint/array-type': [ error, { default: 'array-simple' } ],
