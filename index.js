@@ -5,7 +5,7 @@ const { off, all, always, error, never, warn } = require('./constants');
 module.exports = {
 	rules: {
 		camelcase: off,
-		indent: [ error, 'tab' ],
+		indent: [ error, 'tab', { SwitchCase: 1 } ],
 		'comma-dangle': [ error, never ],
 		'no-unused-vars': off,
 		semi: [ 2, always ],
